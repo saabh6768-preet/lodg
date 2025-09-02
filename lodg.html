@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./lodg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <!-- start-header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          
+        
+          <a class="navbar-brand" href="#"><img src="./img/lodg-logo (1).webp"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+              <li class="nav-item" >
+                <a class="nav-link active" aria-current="page" href="#">login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Register</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-disabled="true">post ad</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div></div>
+      </nav>
+      <!-- end header -->
+    <div class="container-fluid">
+        <div class="row" style="background-color:  #3B6E1C;;">
+            <div class="bar">
+                <p>What is First dibs?</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end-header -->
+    <!-- start-banner -->
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="custom_banner">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class=" banner-1">
+                                <h1>Find or rent out room</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="search_tabs">
+
+                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
+                                        autocomplete="off" checked>
+                                    <label class="btn btn-outline" for="btnradio1"><i
+                                            class="fas fa-home"></i>Room</label>
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline" for="btnradio2">
+                                        <i class="fas fa-user-friends"></i>Housemates</label>
+
+                                </div>
+                            </div>
+                            <form id="search_form" class="d-flex" role="search" action="room_wanted_results"
+                                method="get">
+                                <div class="search-container">
+                                    <input class="form-control me-2 searchbar" id="searchInput" type="text"
+                                        placeholder="Search Housemates by area or postcode" aria-label="Search"
+                                        name="area" size="">
+
+
+                                    <button class="btn btn-light" type="button" id="dropButton"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-crosshairs" style="font-size: 25px; color:#3B6E1C;"></i>
+
+                                    </button>
+                                    <button class="btn btn-light" type="button" id="dropButton"
+                                        data-bs-toggle="dropdown" aria-expanded="false" style="border-left: 1px solid black;
+                                    border-right: 1px solid black; border-radius: 0%;">
+
+                                        <i class="fa-solid fa-bars-progress"
+                                            style="font-size: 25px; color:#3B6E1C; "></i>
+                                    </button>
+                                    <button class="btn btn-light" type="button" id="dropButton"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+
+                                        <i class="fa-solid fa-magnifying-glass"
+                                            style="font-size: 25px; color:#3B6E1C;"></i>
+                                    </button>
+            
+            
+                                </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- end-banner -->
+    <!-- latest room -->
+    <div class=" container">
+        <div class="row">
+            <div class="col-md-12 text-center my-4">
+                <h2>Latest Room Rentals</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 my-4">
+                <div class="home-room">
+                    <img src="./img/room image_1.png">
+                    <div class="home-price my-3  mx-2">
+                        <p><i class="fa-solid fa-sterling-sign"></i>800.00 pm</p></i>
+                        <div class="home-free">
+                            <p>First Dibs</p>
+                        </div>
+                    </div>
+                    <div class=" home-address">
+                        Fullwell ,london ,IG5
+                    </div>
+                    <div class="home-icon">
+                        <div class="card-text">
+                            <i class="fa-solid fa-house"></i>Semi-Detached |
+                            <i class="fa-solid fa-bed"></i> 4 |
+                            <i class="fa-solid fa-bath"></i> 2 |
+                            <i class="fa-solid fa-user-group"></i> 1
+                        </div>
+                    </div>
+                    <div class="home-adgst" style="color: #6d7580;">
+                        1 Double Room
+                    </div>
+                    <div class="home-avail" style="color: #6d7580;">
+                        Available Now
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 my-4">
+                <div class="home-room">
+                    <img src="./img/room2.png">
+                    <div class="home-price my-3  mx-2">
+                        <p><i class="fa-solid fa-sterling-sign"></i>675.00 pm</p></i>
+                        <div class="home-free">
+                            <p>First Dibs</p>
+                        </div>
+                    </div>
+                    <div class=" home-address">
+                        Lansbury ,London ,E14
+                    </div>
+                    <div class="home-icon">
+                        <div class="card-text">
+                            <i class="fa-solid fa-house"></i>Flat |
+                            <i class="fa-solid fa-bed"></i> 1 |
+                            <i class="fa-solid fa-bath"></i> 1 |
+                            <i class="fa-solid fa-user-group"></i> 3
+                        </div>
+                    </div>
+                    <div class="home-adgst" style="color: #6d7580;">
+                        1 Single Room
+                    </div>
+                    <div class="home-avail" style="color: #6d7580;">
+                        Available Now
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 my-4">
+                <div class="home-room">
+                    <img src="./img/room3.jpg">
+                    <div class="home-price my-3  mx-2">
+                        <p><i class="fa-solid fa-sterling-sign"></i>1155.00 pm</p></i>
+                        <div class="home-free">
+                            <p>First Dibs</p>
+                        </div>
+                    </div>
+                    <div class=" home-address">
+                        Vincent Square, London, SW1P
+                    </div>
+                    <div class="home-icon">
+                        <div class="card-text">
+                            <i class="fa-solid fa-house"></i>Studio |
+                            <i class="fa-solid fa-bed"></i> 1 |
+                            <i class="fa-solid fa-bath"></i> 1 |
+                            <i class="fa-solid fa-user-group"></i> 1
+                        </div>
+                    </div>
+                    <div class="home-adgst" style="color: #6d7580;">
+                        1 Single Room
+                    </div>
+                    <div class="home-avail" style="color: #6d7580;">
+                        Available Now
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-md-4 my-3">
+                <div class="home-room">
+                    <img src="./img/r4.jpg">
+                    <div class="home-price my-3  mx-2">
+                        <p><i class="fa-solid fa-sterling-sign"></i>1145.00 pm</p></i>
+                        <div class="home-free">
+                            <p>First Dibs</p>
+                        </div>
+                    </div>
+                    <div class=" home-address">
+                        Addison, London, W14
+                    </div>
+                    <div class="home-icon">
+                        <div class="card-text">
+                            <i class="fa-solid fa-house"></i>Studio |
+                            <i class="fa-solid fa-bed"></i> 1 |
+                            <i class="fa-solid fa-bath"></i> 1 |
+                            <i class="fa-solid fa-user-group"></i> 1
+                        </div>
+                    </div>
+                    <div class="home-adgst" style="color: #6d7580;">
+                        1 Single Room
+                    </div>
+                    <div class="home-avail" style="color: #6d7580;">
+                        Available Now
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 my-3">
+                <div class="home-room">
+                    <img src="./img/r5.jpg">
+                    <div class="home-price my-3  mx-2">
+                        <p><i class="fa-solid fa-sterling-sign"></i>1150.00 pm</p></i>
+                        <div class="home-free">
+                            <p>First Dibs</p>
+                        </div>
+                    </div>
+                    <div class=" home-address">
+                        Notting Dale, London, W1
+                    </div>
+                    <div class="home-icon">
+                        <div class="card-text">
+                            <i class="fa-solid fa-house"></i> Apartment |
+                            <i class="fa-solid fa-bed"></i> 1 |
+                            <i class="fa-solid fa-bath"></i> 1 |
+                            <i class="fa-solid fa-user-group"></i> 1
+                        </div>
+                    </div>
+                    <div class="home-adgst" style="color: #6d7580;">
+                        1 Double Room
+                    </div>
+                    <div class="home-avail" style="color: #6d7580;">
+                        Available Now
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 my-3">
+                <div class="home-room">
+                    <img src="./img/r6.jpg">
+                    <div class="home-price my-3  mx-2">
+                        <p><i class="fa-solid fa-sterling-sign"></i>800.00 pm</p></i>
+                        <div class="home-free">
+                            <p>First Dibs</p>
+                        </div>
+                    </div>
+                    <div class=" home-address">
+                        Crystal Palace & Upper Norwood, London, SE19
+                    </div>
+                    <div class="home-icon">
+                        <div class="card-text">
+                            <i class="fa-solid fa-house"></i>Flat |
+                            <i class="fa-solid fa-bed"></i> 2 |
+                            <i class="fa-solid fa-bath"></i> 1 |
+                            <i class="fa-solid fa-user-group"></i> 1
+                        </div>
+                    </div>
+                    <div class="home-adgst" style="color: #6d7580;">
+                        1 Double Room
+                    </div>
+                    <div class="home-avail" style="color: #6d7580;">
+                        Available Now
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 my-3">
+                    <div class="home-room">
+                        <img src="./img/r7.png">
+                        <div class="home-price my-3  mx-2">
+                            <p><i class="fa-solid fa-sterling-sign"></i>1000.00 pm</p></i>
+                            <div class="home-free">
+                                <p>First Dibs</p>
+                            </div>
+                        </div>
+                        <div class=" home-address">
+                            Trinity, London, SW1
+                        </div>
+                        <div class="home-icon">
+                            <div class="card-text">
+                                <i class="fa-solid fa-house"></i> Flat |
+                                <i class="fa-solid fa-bed"></i> 3 |
+                                <i class="fa-solid fa-bath"></i> 1 |
+                                <i class="fa-solid fa-user-group"></i> 3
+                            </div>
+                        </div>
+                        <div class="home-adgst" style="color: #6d7580;">
+                            1 Double Room
+                        </div>
+                        <div class="home-avail" style="color: #6d7580;">
+                            Available Now
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-3">
+                    <div class="home-room">
+                        <img src="./img/r8.png">
+                        <div class="home-price my-3  mx-2">
+                            <p><i class="fa-solid fa-sterling-sign"></i>800.00 pm</p></i>
+                            <div class="home-free">
+                                <p>First Dibs</p>
+                            </div>
+                        </div>
+                        <div class=" home-address">
+                            Gravesend, South East, DA12
+                        </div>
+                        <div class="home-icon">
+                            <div class="card-text">
+                                <i class="fa-solid fa-house"></i>Flat |
+                                <i class="fa-solid fa-bed"></i> 1 |
+                                <i class="fa-solid fa-bath"></i> 1 |
+                                <i class="fa-solid fa-user-group"></i> 1
+                            </div>
+                        </div>
+                        <div class="home-adgst" style="color: #6d7580;">
+                            1 Double Room
+                        </div>
+                        <div class="home-avail" style="color: #6d7580;">
+                            Available Now
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-3">
+                    <div class="home-room">
+                        <img src="./img/r9.png">
+                        <div class="home-price my-3  mx-2">
+                            <p><i class="fa-solid fa-sterling-sign"></i>525.00 - <i
+                                    class="fa-solid fa-sterling-sign"></i>575.00 pm</p></i>
+                            <div class="home-free">
+                                <p>First Dibs</p>
+                            </div>
+                        </div>
+                        <div class=" home-address">
+                            Thetford Burrell, East of England, IP24
+                        </div>
+                        <div class="home-icon">
+                            <div class="card-text">
+                                <i class="fa-solid fa-house"></i> Apartment |
+                                <i class="fa-solid fa-bed"></i> 3 |
+                                <i class="fa-solid fa-bath"></i> 1 |
+                                <i class="fa-solid fa-user-group"></i> 1
+                            </div>
+                        </div>
+                        <div class="home-adgst" style="color: #6d7580;">
+                            2 Double Room
+                        </div>
+                        <div class="home-avail" style="color: #6d7580;">
+                            Available Now
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 my-3">
+                    <div class="home-room">
+                        <img src="./img/r10.jpg">
+                        <div class="home-price my-3  mx-2">
+                            <p><i class="fa-solid fa-sterling-sign"></i>850.00 pm</p></i>
+                            <div class="home-free" style="padding-right: 10px;
+                            margin-right: 40px;">
+                                <p style="background-color: #3B6E1C; width: 100%;
+                                margin-right: 50px;">Free to contect</p>
+                            </div>
+                        </div>
+                        <div class=" home-address">
+                            Goodmayes, London, IG3
+                        </div>
+                        <div class="home-icon">
+                            <div class="card-text">
+                                <i class="fa-solid fa-house"></i> Apartment |
+                                <i class="fa-solid fa-bed"></i> 2 |
+                                <i class="fa-solid fa-bath"></i> 1 |
+                                <i class="fa-solid fa-user-group"></i> 1
+                            </div>
+                        </div>
+                        <div class="home-adgst" style="color: #6d7580;">
+                            1 Double Room
+                        </div>
+                        <div class="home-avail" style="color: #6d7580;">
+                            Available Now
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="home-room">
+                        <img src="./img/r11.png">
+                        <div class="home-price my-3  mx-2">
+                            <p><i class="fa-solid fa-sterling-sign"></i>1000.00 pm</p></i>
+                            <div class="home-free">
+                                <p>First Dibs</p>
+                            </div>
+                        </div>
+                        <div class=" home-address">
+                            Forest Hill, London, SE23
+                        </div>
+                        <div class="home-icon">
+                            <div class="card-text">
+                                <i class="fa-solid fa-house"></i> Flat |
+                                <i class="fa-solid fa-bed"></i> 2 |
+                                <i class="fa-solid fa-bath"></i> 1 |
+                                <i class="fa-solid fa-user-group"></i> 2
+                            </div>
+                        </div>
+                        <div class="home-adgst" style="color: #6d7580;">
+                            1 Double Room
+                        </div>
+                        <div class="home-avail" style="color: #6d7580;">
+                            Available Now
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="home-room">
+                        <img src="./img/r12.png">
+                        <div class="home-price my-3  mx-2">
+                            <p><i class="fa-solid fa-sterling-sign"></i>700.00 pm</p></i>
+                            <div class="home-free">
+                                <p>First Dibs</p>
+                            </div>
+                        </div>
+                        <div class=" home-address">
+                            Beam Park, London, RM13
+                        </div>
+                        <div class="home-icon">
+                            <div class="card-text">
+                                <i class="fa-solid fa-house"></i> Semi-Detached |
+                                <i class="fa-solid fa-bed"></i> 3 |
+                                <i class="fa-solid fa-bath"></i> 3 |
+                                <i class="fa-solid fa-user-group"></i> 2
+                            </div>
+                        </div>
+                        <div class="home-adgst" style="color: #6d7580;">
+                            1 Double Room
+                        </div>
+                        <div class="home-avail" style="color: #6d7580;">
+                            Available Now
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center my-4">
+                <h2>Latest Room Wanted Ads</h2>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-4 my-3">
+                    <div class="home-room">
+                        <img src="./img/r13.jpg">
+                        <div class="home-price my-3  mx-2">
+                            <p>Allycia</p>
+                            <div class="home-free" style="padding-right: 10px;
+                            margin-right: 40px;">
+                                <p style="background-color: #3B6E1C; width: 100%;
+                                margin-right: 50px;">Free to contect</p>
+                            </div>
+                        </div>
+                        <div class=" home-address">
+                            22 year old female
+                        </div>
+                        <div class="home-icon">
+                            <div class="card-text">
+                                Budget: £550.00 PM
+                            </div>
+                        </div>
+                        <div class="home-adgst" style="color: #6d7580;">
+                            I am looking to rent a room for 6 months. Lo...
+                        </div>
+                        <div class="home-avail" style="color: #6d7580;">
+                            Available from 15-03-2025
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="home-room">
+                        <div class="pro-1">
+                            <img src="./img/r14.png">
+                        </div>
+                        <div class="home-price my-3  mx-2">
+                            <p>Tom</p>
+                            <div class="home-free" style="padding-right: 10px;
+                                margin-right: 40px;">
+                                <p style="background-color: #3B6E1C; width: 100%;
+                                    margin-right: 50px;">Free to contect</p>
+                            </div>
+                        </div>
+                        <div class=" home-address">
+                            37 year old male
+                        </div>
+                        <div class="home-icon">
+                            <div class="card-text">
+                                Budget: £500.00 PM
+                            </div>
+                        </div>
+                        <div class="home-adgst" style="color: #6d7580;">
+                            Looking to rent a room in the Newcastle area...
+                        </div>
+                        <div class="home-avail" style="color: #6d7580;">
+                            Available Now
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="home-room">
+                        <img src="./img/r15.jpg">
+                        <div class="home-price my-3  mx-2">
+                            <p>Venessa + 1 Male</p></i>
+                            <div class="home-free" style="padding-right: 10px;
+                                    margin-right: 40px;">
+                                <p style="background-color: #3B6E1C; width: 100%;
+                                        margin-right: 50px;">Free to contect</p>
+                            </div>
+                        </div>
+                        <div class=" home-address">
+                            29 year old female
+                        </div>
+                        <div class="home-icon">
+                            <div class="card-text">
+                                Budget: £550.00 PM
+                            </div>
+                        </div>
+                        <div class="home-adgst" style="color: #6d7580;">
+                            I am starting a new job in Windermere and I ...
+                        </div>
+                        <div class="home-avail" style="color: #6d7580;">
+                            Available Now
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end room -->
+    <!-- footer-section -->
+    <div class="container-fluid m-0 p-0">
+        <div class="row d-flex" style="background-color: #202020;">
+            <div class="col-md-7">
+                <!-- <div class="footer" style="display: flex;"> -->
+                <div class="footer-1">
+                    <ul>
+                        <li>REGISTER</li>
+                        <li>PRIVACY POLICY</li>
+                        <li>ABOUT</li>
+                        <li>TERMS</li>
+                        <li>FAQs</li>
+                        <li>CONTECT</li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-5 my-5">
+
+
+
+                <div class="icon">
+                    <span class="pig"><i class="fa-brands fa-instagram"></i></span>
+                    <span class="pig"><i class="fa-brands fa-tiktok"></i></span>
+                    <span class="pig"><i class="fa-brands fa-twitter"></i></span>
+                    <span class="pig"><i class="fa-brands fa-facebook"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row text-center" style="background-color: #121212; padding: 17px; color: #a7a7a7;">
+            <p class="under-1">Copyright © 2025 Lodg Ltd. Registered in England Company No.<span
+                    class="under">15820628</span></p>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script> 
+</body>
+  
+
+</html>
